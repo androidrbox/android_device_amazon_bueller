@@ -1,0 +1,21 @@
+#
+# system.prop for firetv
+#
+ro.carrier=wifi-only
+
+service.adb.tcp.port=5555
+
+config.disable_bluetooth=true
+
+ro.vendor.extension_library=/system/lib/libqc-opt.so
+
+wlan.driver.ath.wlanchip=AR6004-USB
+wlan.driver.ath=2
+qcom.bluetooth.soc=ath3k
+
+# XXX not including module path for now
+# manually loading driver for now
+#wlan.driver.status=ok
+
+# we don't have no gps...
+config.disable_location=true
